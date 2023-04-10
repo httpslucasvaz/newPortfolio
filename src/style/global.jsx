@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
     html, body {
         background-color: ${props => props.theme.colors.secondary};
+        font-family: 'Poppins', 'sans-serif'
     }
 `;
 
