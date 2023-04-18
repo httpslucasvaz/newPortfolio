@@ -1,6 +1,4 @@
-import { Content, TextContent, Text, Wrapper } from "./styled";
-
-
+import { Content, TextContent, Text, Wrapper, Arrow } from "./styled";
 
 export function Home() {
   return (
@@ -11,11 +9,14 @@ export function Home() {
           <p>PORT</p>
           <p>FOLIO</p>
           <TextContent>
-          <Text>desenvolvedor</Text>
-          <Text>front-end</Text>
+            <Text>desenvolvedor</Text>
+            <Text>front-end</Text>
             <img src="./images/line1.svg" alt="line" />
             <img src="./images/line2.svg" alt="line" />
           </TextContent>
+          <Arrow>
+          <img src="./images/arrow.svg" alt="arrow" />
+          </Arrow>
         </div>
       </Content>
     </Wrapper>
