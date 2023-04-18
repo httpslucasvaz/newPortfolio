@@ -27,6 +27,8 @@ export const Content = styled.div`
     font-family: "Kanit", "sans-serif";
     color: ${({ theme }) => theme.colors.primary};
   }
+
+ 
 `;
 
 export const Text = styled.span`
@@ -52,3 +54,11 @@ export const TextContent = styled.div`
     margin-top: clamp(-0.8rem, -5rem, -6rem);
   }
 `;
+
+export const Arrow = styled.span`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+`
