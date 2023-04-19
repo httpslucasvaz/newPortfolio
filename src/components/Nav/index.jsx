@@ -1,4 +1,11 @@
-import { Wrapper, NavBar, IconMdMenu, IconMdClose, NavList, NavBarMobile } from "./styled";
+import {
+  Wrapper,
+  NavBar,
+  IconMdMenu,
+  IconMdClose,
+  NavList,
+  NavBarMobile,
+} from "./styled";
 import { useState, useEffect } from "react";
 
 const navData = [
@@ -28,14 +35,14 @@ export function Nav() {
   };
 
   const screenWidth = () => {
-    if(pageWidth > 900) {
+    if (pageWidth > 900) {
       setIsOpen(false);
-       }
-  }
-  
+    }
+  };
+
   useEffect(() => {
-    screenWidth()
-  },[pageWidth])
+    screenWidth();
+  }, [pageWidth]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -49,13 +56,11 @@ export function Nav() {
     };
   }, []);
 
-  
   return (
     <Wrapper>
       <NavBar>
         <p>lucasvaz</p>
         {isOpen ? (
-          
           <IconMdClose onClick={handleOpen} />
         ) : (
           <IconMdMenu onClick={handleOpen} />
@@ -70,7 +75,7 @@ export function Nav() {
       </NavBar>
       {isOpen && (
         <NavBarMobile>
-        {navData.map((item) => (
+          {navData.map((item) => (
             <ul key={item.id}>
               <li>{item.title}</li>
             </ul>
@@ -79,4 +84,4 @@ export function Nav() {
       )}
     </Wrapper>
   );
- }
+}
