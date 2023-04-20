@@ -1,4 +1,6 @@
+import { AboutMe } from "./components/AboutMe";
 import { Home } from "./components/Home";
+import { MyProjects } from "./components/MyProjects";
 import { Nav } from "./components/Nav";
 
 function App() {
@@ -6,6 +8,8 @@ function App() {
     <div>
       <Nav />
       <Home />
+      <AboutMe />
+      <MyProjects />
     </div>
   );
 }
