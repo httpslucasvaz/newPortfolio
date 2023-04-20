@@ -61,17 +61,31 @@ export const Card = styled.div`
   border-radius: 0.5rem;
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.09);
 
-  background-color: #d6d6d6;
   transition: all 500ms;
 
-  h3 {
+  h1 {
+    margin-top: 2rem;
     transform: rotate(90deg);
+    position: absolute;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+    p {
+      padding: 1rem;
+      border-top: 3px solid ${({ theme }) => theme.colors.secondary};
+    }
   }
 
   &:hover {
     flex: 3;
-    cursor: pointer;
+    background-color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.secondary};
   }
 `;
-
-
