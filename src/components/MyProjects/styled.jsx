@@ -48,6 +48,11 @@ export const CardContainer = styled.div`
   gap: 2rem;
   padding: 2rem;
   flex-wrap: wrap;
+
+  @media (max-width: 850px) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 `;
 
 export const Card = styled.div`
@@ -75,12 +80,23 @@ export const Card = styled.div`
     height: 100%;
     justify-content: flex-end;
     align-items: flex-end;
-    cursor: pointer;
 
-    p {
+    a {
       padding: 1rem;
       border-top: 3px solid ${({ theme }) => theme.colors.secondary};
+      cursor: pointer;
+      text-decoration: none;
+      color: ${({ theme }) => theme.colors.dark};
+
+      &:active, :visited {
+        color: ${({ theme }) => theme.colors.secondary};
+      }
+
     }
+
+    @media (max-width: 850px) {
+      height: 30rem;
+  }
   }
 
   &:hover {
@@ -89,3 +105,12 @@ export const Card = styled.div`
     color: ${({ theme }) => theme.colors.secondary};
   }
 `;
+
+
+export const Teste = styled.div`
+  color: transparent;
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.dark};
+  }
+`
