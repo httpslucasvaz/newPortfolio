@@ -1,20 +1,31 @@
 import { Wrapper, Content, Title, Text } from "./styled";
+import { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export function AboutMe() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+    });
+  });
+
   return (
     <Wrapper id="sobremim">
       <Content>
         <Title>
           <span>
-            <p>UM POUCO</p>
-            <p>
+            <p data-aos="fade-down">UM POUCO</p>
+            <p data-aos="fade-right">
               SOBRE
               <br />
               MIM
             </p>
           </span>
         </Title>
-        <Text>
+        <Text data-aos="fade-up" data-aos-delay="400">
           <p>It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout. The point of
           using Lorem Ipsum is that it has a more-or-less normal distribution of

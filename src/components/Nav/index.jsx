@@ -9,6 +9,8 @@ import {
 } from "./styled";
 import { useState, useEffect } from "react";
 
+
+
 const navData = [
   {
     id: 1,
@@ -56,6 +58,8 @@ export function Nav() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+
 
   return (
     <Wrapper>
