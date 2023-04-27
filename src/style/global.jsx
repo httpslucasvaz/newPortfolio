@@ -14,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
     -webkit-user-select: none;
     user-select: none;
     font-smooth: antialiased;
+    scroll-behavior: smooth;
 
     }
 
