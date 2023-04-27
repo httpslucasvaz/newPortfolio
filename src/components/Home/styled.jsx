@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 5rem);
+  height: calc(100vh + 5rem);
   align-items: center;
   justify-content: center;
 

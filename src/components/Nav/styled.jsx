@@ -5,6 +5,12 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 5rem;
   background-color: ${(props) => props.theme.colors.primary};
+  position: fixed;
+  z-index: 999;
+
+  a {
+    all: unset;
+  }
 `;
 
 export const NavBar = styled.nav`
@@ -14,6 +20,11 @@ export const NavBar = styled.nav`
   margin: auto;
   justify-content: space-between;
   align-items: center;
+
+  img {
+    width: 8rem;
+    margin-left: 1rem;
+  }
 
 `;
 

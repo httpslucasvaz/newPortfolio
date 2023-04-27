@@ -8,7 +8,8 @@ export const Wrapper = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh + 5rem);
+  padding-top: 5rem;
   align-items: center;
   justify-content: center;
 `;
@@ -88,15 +89,15 @@ export const Card = styled.div`
       text-decoration: none;
       color: ${({ theme }) => theme.colors.dark};
 
-      &:active, :visited {
+      &:active,
+      :visited {
         color: ${({ theme }) => theme.colors.secondary};
       }
-
     }
 
     @media (max-width: 850px) {
       height: 30rem;
-  }
+    }
   }
 
   &:hover {
@@ -106,11 +107,10 @@ export const Card = styled.div`
   }
 `;
 
-
 export const Teste = styled.div`
   color: transparent;
 
   &:hover {
     color: ${({ theme }) => theme.colors.dark};
   }
-`
+`;
