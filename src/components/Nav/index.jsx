@@ -1,3 +1,4 @@
+
 import {
   Wrapper,
   NavBar,
@@ -12,7 +13,7 @@ const navData = [
   {
     id: 1,
     title: "SOBRE MIM",
-    section: "sobre-mim",
+    section: "sobremim",
   },
   {
     id: 2,
@@ -59,7 +60,7 @@ export function Nav() {
   return (
     <Wrapper>
       <NavBar>
-        <p>lucasvaz</p>
+        <img src="./images/lucasvazlogo.png" alt="logo" />
         {isOpen ? (
           <IconMdClose onClick={handleOpen} />
         ) : (
@@ -68,7 +69,9 @@ export function Nav() {
         <NavList>
           {navData.map((item) => (
             <ul key={item.id}>
-              <li>{item.title}</li>
+              <a href={`#${item.section}`}>
+                <li>{item.title}</li>
+              </a>
             </ul>
           ))}
         </NavList>
@@ -77,7 +80,9 @@ export function Nav() {
         <NavBarMobile>
           {navData.map((item) => (
             <ul key={item.id}>
-              <li>{item.title}</li>
+              <a href={`#${item.section}`} onClick={handleOpen}>
+                <li>{item.title}</li>
+              </a>
             </ul>
           ))}
         </NavBarMobile>

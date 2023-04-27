@@ -3,7 +3,7 @@ import data from "../../data/myProjects";
 
 export function MyProjects() {
   return (
-    <Wrapper>
+    <Wrapper id="projetos">
       <Content>
         <Title>
           <span>

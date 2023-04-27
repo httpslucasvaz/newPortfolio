@@ -2,7 +2,7 @@ import { Content, TextContent, Text, Wrapper, Arrow } from "./styled";
 
 export function Home() {
   return (
-    <Wrapper>
+    <Wrapper id="home">
       <Content>
         <div>
           <p>MEU</p>

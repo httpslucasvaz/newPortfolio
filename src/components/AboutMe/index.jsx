@@ -2,7 +2,7 @@ import { Wrapper, Content, Title, Text } from "./styled";
 
 export function AboutMe() {
   return (
-    <Wrapper>
+    <Wrapper id="sobremim">
       <Content>
         <Title>
           <span>
